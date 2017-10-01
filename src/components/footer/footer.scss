@@ -1,0 +1,16 @@
+@import "../../styles/variables.scss";
+
+$height: 40px;
+
+footer {
+  padding: 10px $side-padding;
+  width: #{100% - ($side-padding * 2)};
+  height: $height;
+  line-height: $height;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: flex-end;
+  border-top: 1px solid $border-color;
+}

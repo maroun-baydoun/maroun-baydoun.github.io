@@ -1,0 +1,23 @@
+@import "../../styles/variables.scss";
+
+$height: 50px;
+
+header {
+  padding: 10px $side-padding;
+  line-height: $height;
+  height: $height;
+  display: flex;
+  justify-content: flex-start;
+  border-bottom: 1px solid $border-color;
+
+  h1 {
+    font-size: 2em;
+    font-weight: 500;
+  }
+
+  h2 {
+    font-size: 1.1em;
+    font-weight: 300;
+    margin-left: 10px;
+  }
+}
