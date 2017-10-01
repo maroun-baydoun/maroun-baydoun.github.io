@@ -1,4 +1,5 @@
 @import "../styles/variables.scss";
+@import "../styles/mixins.scss";
 
 body,
 html {
@@ -28,9 +29,13 @@ a {
 }
 
 #app {
-  
   .main {
     padding: 0 $side-padding;
   }
+}
 
+@include phone {
+  body {
+    font-size: $global-font-size-mobile;
+  }
 }

@@ -1,3 +1,4 @@
+@import "../../styles/mixins.scss";
 
 nav {
   display: flex;
@@ -8,5 +9,14 @@ nav {
   a {
     font-size: 1.3em;
     margin: 0 5px;
+  }
+}
+
+@include phone {
+  nav {
+    a {
+      font-size: 1.9em;
+      margin: 0 10px;
+    }
   }
 }
