@@ -8,4 +8,12 @@
     <loc>http://dev.maroun-baydoun.com/new-hope/</loc>
     <changefreq>weekly</changefreq>
   </url>
+  <url>
+    <loc>http://dev.maroun-baydoun.com/mediaq/</loc>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>http://dev.maroun-baydoun.com/evented/</loc>
+    <changefreq>weekly</changefreq>
+  </url>
 </urlset>

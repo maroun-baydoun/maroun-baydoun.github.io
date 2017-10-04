@@ -1,0 +1,49 @@
+@import "../../styles/variables.scss";
+@import "../../styles/mixins.scss";
+
+article {
+  width: 300px;
+  height: 200px;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid $border-color;
+  border-radius: 3px;
+  background-color: #efefef;
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid $border-color;
+
+    h3 {
+      padding-bottom: 5px;
+    }
+
+    nav {
+      a {
+        margin: 0 3px;
+      }
+    }
+  }
+
+  .description {
+    margin: 10px 0;
+  }
+}
+
+@include phone {
+  article {
+    margin: 10px auto;
+    height: 150px;
+
+    .header {
+      nav {
+        line-height: 1.4em;
+        a {
+          margin: 0 5px;
+          font-size: 1.4em;
+        }
+      }
+    }
+  }
+}

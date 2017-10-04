@@ -11,6 +11,7 @@ body {
   font-family: $global-font-family;
   font-size: $global-font-size;
   color: $text-color;
+  background-color: $body-background;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -31,11 +32,27 @@ a {
 #app {
   .main {
     padding: 0 $side-padding;
+
+    .project-container {
+      display: flex;
+      margin-top: 40px;
+    }
   }
 }
 
 @include phone {
   body {
     font-size: $global-font-size-mobile;
+  }
+
+  #app {
+    .main {
+      padding: 0 $side-padding-mobile;
+
+      .project-container {
+        flex-direction: column;
+        margin-top: 20px;
+      }
+    }
   }
 }

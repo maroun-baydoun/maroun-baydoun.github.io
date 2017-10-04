@@ -26,5 +26,6 @@ header {
 @include phone {
   header {
     justify-content: center;
+    padding: 5px $side-padding-mobile;
   }
 }

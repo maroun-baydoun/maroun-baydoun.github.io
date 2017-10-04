@@ -14,10 +14,13 @@ footer {
   display: flex;
   justify-content: flex-end;
   border-top: 1px solid $border-color;
+  background-color: $body-background;
 }
 
 @include phone {
   footer {
     justify-content: center;
+    padding: 5px $side-padding-mobile;
+    width: #{100% - ($side-padding-mobile * 2)};
   }
 }
