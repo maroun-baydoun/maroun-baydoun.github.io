@@ -1,2 +1,4 @@
 User-agent: *
 Disallow:
+
+sitemap: http://dev.maroun-baydoun.com/sitemap.xml
