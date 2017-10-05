@@ -1,0 +1,17 @@
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+
+  li {
+    font-size: 0.7em;
+    line-height: 0.7em;
+    padding: 8px;
+    margin-left: 8px;
+    border-radius: 2px;
+    background-color: #813772;
+    color: #efefef;
+  }
+}

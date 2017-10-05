@@ -12,6 +12,7 @@
       </nav>
     </section>
     <section class="description">{{project.description}}</section>
+    <stack :stack="project.stack"></stack>
   </article>
 </template>
 
