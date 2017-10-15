@@ -1,7 +1,7 @@
 <template>
   <header>
     <h1>maroun baydoun</h1>
-    <h2>open source</h2>
+    <h2>open source projects</h2>
   </header>
 </template>
 

@@ -6,7 +6,7 @@
         <a v-bind:href="project.githubUrl" target="_blank" v-bind:title="project.name+ ' on Guithub'">
           <i class="fa fa-github-alt"></i>
         </a>
-        <a v-bind:href="project.url" target="_blank" v-bind:title="project.name+ ' project page'">
+        <a v-bind:href="project.url" v-bind:title="project.name+ ' project page'">
           <i class="fa fa-file-code-o"></i>
         </a>
       </nav>

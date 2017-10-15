@@ -1,6 +1,6 @@
 <template>
   <nav>
-    <a href="http://www.maroun-baydoun.com" target="_blank" rel="me">
+    <a href="http://www.maroun-baydoun.com" rel="me home">
       <i class="fa fa-home" aria-hidden="true"></i>
     </a>
     <a href="https://github.com/maroun-baydoun" target="_blank" rel="external me">
