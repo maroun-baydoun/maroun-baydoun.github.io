@@ -9,6 +9,7 @@ article {
   border: 1px solid $border-color;
   border-radius: 3px;
   background-color: #efefef;
+  box-shadow: 1px 1px 5px lighten($border-color, 3);
 
   .header {
     display: flex;

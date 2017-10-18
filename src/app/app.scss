@@ -26,7 +26,12 @@ a {
   transition: 0.5s color;
 
   &:hover {
-    color: lighten($link-color, 20);
+    color: lighten($link-color, 15);
+  }
+
+  &:focus {
+    outline: 1px dashed #aaa;
+    outline-offset: 3px;
   }
 }
 
