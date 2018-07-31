@@ -1,3 +1,3 @@
 export default {
-  name: 'social-links'
-}
+  name: 'social-links',
+};

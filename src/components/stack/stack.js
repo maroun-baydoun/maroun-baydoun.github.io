@@ -3,7 +3,7 @@ export default {
   props: {
     stack: {
       type: Array,
-      required: true
-    }
+      required: true,
+    },
   },
-}
+};
