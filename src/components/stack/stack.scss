@@ -1,5 +1,5 @@
 ul {
-  margin: 0;
+  margin: auto 0 0 0;
   padding: 0;
   list-style: none;
   display: flex;
@@ -10,8 +10,8 @@ ul {
     line-height: 0.7em;
     padding: 8px;
     margin-left: 8px;
-    border-radius: 2px;
-    border: 1px solid #813772;
-    color: #813772;
+    border-radius: 20px;
+    color: #efefef;
+    background-color: #813772;
   }
 }
