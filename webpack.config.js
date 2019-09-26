@@ -1,30 +1,16 @@
 const path = require('path');
 const webpack = require('webpack');
-const VueLoaderPlugin = require('vue-loader/lib/plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
 module.exports = {
-  entry: './src/main.js',
+  entry: './src/app.js',
   output: {
     path: path.resolve(__dirname, './dist'),
-    publicPath: '/dist/',
-    filename: 'main.js'
+    filename: 'app.js'
   },
   module: {
     rules: [
-      {
-        test: /\.vue$/,
-        loader: 'vue-loader',
-      },
-      {
-        test: /\.scss/,
-        use: [
-          'vue-style-loader',
-          'css-loader',
-          'sass-loader',
-        ],
-        exclude: /node_modules/,
-      },
       {
         test: /\.js$/,
         loader: 'babel-loader',
@@ -39,21 +25,18 @@ module.exports = {
       }
     ]
   },
-  resolve: {
-    alias: {
-      'vue$': 'vue/dist/vue.esm.js'
-    }
-  },
-  devServer: {
-    historyApiFallback: true,
-    noInfo: true
-  },
-  performance: {
-    hints: false
-  },
+
   plugins: [
-    new VueLoaderPlugin(),
-  ]
+    new HtmlWebpackPlugin({
+        template: path.join(__dirname, 'src/index.html')
+    }),
+  ],
+
+  devServer: {
+    contentBase: path.join(__dirname, 'dist'),
+    compress: true,
+    port: 8080
+  },
 }
 
 if (process.env.NODE_ENV === 'production') {
