@@ -6,7 +6,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Maroun Baydoun">
-    <title><%= htmlWebpackPlugin.options.title %> | Maroun Baydoun</title>
+    <title>
+        <%= htmlWebpackPlugin.options.title %> | Maroun Baydoun
+    </title>
     <meta name="description" content="<%= htmlWebpackPlugin.options.description%>">
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
     <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
@@ -29,7 +31,20 @@
             <% } %>
         </nav>
     </header>
-    <main class="content"></main>
+    <main class="content">
+        <section class="projects-container">
+            <% for (var i=0; i < htmlWebpackPlugin.options.projects.length; i++) { %>
+                <article class="project-container">
+                    <h3>
+                        <a href="https://dev.maroun-baydoun.com/<%= htmlWebpackPlugin.options.projects[i].name %>">
+                            <%= htmlWebpackPlugin.options.projects[i].name %>
+                        </a>
+                    </h3>
+                    <p><%= htmlWebpackPlugin.options.projects[i].description %></p>
+                </article>
+                <% } %>
+        </section>
+    </main>
     <footer class="footer">
         <div class="credits">
             Created by <a href="https://maroun-baydoun.com">Maroun Baydoun</a>
@@ -44,7 +59,7 @@
 
             gtag('config', 'UA-62589493-1', { 'anonymize_ip': true });
         </script>
-    <% } %>
+        <% } %>
 </body>
 
 </html>

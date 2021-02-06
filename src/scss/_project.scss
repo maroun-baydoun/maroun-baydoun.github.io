@@ -1,0 +1,19 @@
+@import "variables";
+@import "mixins";
+
+$project-container-description-font-size: 0.8rem;
+
+.projects-container {
+  .project-container {
+    &:not(:first-of-type) {
+      @include margin-top(2);
+    }
+
+    p {
+      color: $body-color2;
+      font-size: $project-container-description-font-size;
+
+      @include margin-top(1);
+    }
+  }
+}
