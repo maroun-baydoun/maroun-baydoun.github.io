@@ -14,6 +14,10 @@ module.exports = merge(common, {
           from: path.resolve(__dirname, "src", "sitemap.xml"),
           to: path.resolve(__dirname, "dist", "sitemap.xml"),
         },
+        {
+          from: path.resolve(__dirname, "CNAME"),
+          to: path.resolve(__dirname, "dist"),
+        },
       ],
     }),
   ],
