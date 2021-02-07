@@ -10,7 +10,6 @@ $project-container-description-font-size: 0.8rem;
     }
 
     p {
-      color: $body-color2;
       font-size: $project-container-description-font-size;
 
       @include margin-top(1);

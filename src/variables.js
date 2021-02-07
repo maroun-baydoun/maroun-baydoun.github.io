@@ -12,6 +12,10 @@ module.exports = {
       name: "react-appear-in",
       description: "Make React components appear sometime in the future",
     },
+    {
+      name: "use-media-query",
+      description: "Listen to media query matches in React",
+    },
     { name: "new-hope", description: "Esperanto tokenizer" },
   ],
 };
