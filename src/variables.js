@@ -5,7 +5,6 @@ module.exports = {
   heading2: "Open source projects",
   githubLink: "",
   npmLink: "",
-
   projects: [
     { name: "reaflex", description: "Easy Flexbox in React" },
     {
@@ -18,4 +17,6 @@ module.exports = {
     },
     { name: "new-hope", description: "Esperanto tokenizer" },
   ],
+  subPath: "",
+  linkHome: false,
 };
