@@ -16,6 +16,7 @@ module.exports = {
       description: "Listen to media query matches in React",
     },
     { name: "new-hope", description: "Esperanto tokenizer" },
+    { name: "youtube-controller-extension", description: "Control Youtube™ videos from any web page" },
   ],
   subPath: "",
   linkHome: false,
