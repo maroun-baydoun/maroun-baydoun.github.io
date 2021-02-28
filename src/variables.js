@@ -17,6 +17,7 @@ module.exports = {
     },
     { name: "new-hope", description: "Esperanto tokenizer" },
     { name: "youtube-controller-extension", description: "Control Youtube™ videos from any web page" },
+    { name: "evented", description: "Fire and listen to events in JavaScript" },
   ],
   subPath: "",
   linkHome: false,
