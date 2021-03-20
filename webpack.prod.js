@@ -39,8 +39,8 @@ module.exports = merge(common, {
           },
         },
         {
-          from: path.resolve(__dirname, "CNAME"),
-          to: path.resolve(__dirname, "dist"),
+          from: resolve(__dirname, "CNAME"),
+          to: resolve(__dirname, "dist"),
         },
       ],
     }),
