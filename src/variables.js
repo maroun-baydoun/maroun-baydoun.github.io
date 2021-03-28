@@ -6,6 +6,10 @@ module.exports = {
   githubLink: "",
   npmLink: "",
   projects: [
+    {
+      name: "mediaq",
+      description: "Listen to media query updates in JavaScript",
+    },
     { name: "reaflex", description: "Easy Flexbox in React" },
     {
       name: "react-appear-in",
