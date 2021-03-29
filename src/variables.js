@@ -15,16 +15,16 @@ module.exports = {
       name: "react-appear-in",
       description: "Make React components appear sometime in the future",
     },
-    {
-      name: "use-media-query",
-      description: "Listen to media query matches in React",
-    },
+    { name: "evented", description: "Fire and listen to events in JavaScript" },
     { name: "new-hope", description: "Esperanto tokenizer" },
     {
       name: "youtube-controller-extension",
       description: "Control Youtube™ videos from any web page",
     },
-    { name: "evented", description: "Fire and listen to events in JavaScript" },
+    {
+      name: "use-media-query",
+      description: "Listen to media query matches in React",
+    },
     {
       name: "de-noun-parser",
       description: "Parse Wikitext's de-noun template",
