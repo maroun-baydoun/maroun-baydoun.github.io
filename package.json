@@ -45,7 +45,7 @@
   "dependencies": {
     "@fontsource/cutive-mono": "4.5.0",
     "@fontsource/roboto": "4.5.0",
-    "prismjs": "1.24.1"
+    "prismjs": "1.25.0"
   },
   "features": {
     "react": false,
