@@ -10,6 +10,10 @@ module.exports = {
       name: "mediaq",
       description: "Listen to media query updates in JavaScript",
     },
+    {
+      name: "tiny-flex",
+      description: "Flexbox layout for the modern web",
+    },
     { name: "reaflex", description: "Easy Flexbox in React" },
     {
       name: "react-appear-in",
