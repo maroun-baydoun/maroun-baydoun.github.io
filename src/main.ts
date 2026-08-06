@@ -11,7 +11,10 @@ if (projectList) {
     .map(
       (project) => `
         <li class="project-card">
-          <a href="${project.href}" rel="noreferrer" target="_blank">
+          <a
+            href="${project.href}"
+            ${project.newTab ? 'rel="noreferrer" target="_blank"' : ""}
+          >
             <span class="project-card-label">${project.kind ?? "Library"}</span>
             <span class="project-card-title">${project.name}</span>
             <span class="project-card-description">${project.description}</span>

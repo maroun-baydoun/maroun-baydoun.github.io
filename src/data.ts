@@ -3,6 +3,7 @@ export type Project = {
   description: string;
   href: string;
   kind?: string;
+  newTab?: boolean;
 };
 
 const projectUrl = (slug: string) => `https://dev.maroun-baydoun.com/${slug}`;
@@ -49,5 +50,6 @@ export const projects: Project[] = [
     description: "Putting the pieces back together.",
     href: "https://zikra-game.netlify.app/",
     kind: "Game",
+    newTab: true,
   },
 ];
