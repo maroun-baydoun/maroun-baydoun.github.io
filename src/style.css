@@ -1,0 +1,181 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg: oklch(0.13 0.03 255);
+  --color-surface: oklch(0.18 0.03 255);
+  --color-surface-elevated: oklch(0.22 0.03 255);
+  --color-foreground: oklch(0.98 0.01 255);
+  --color-muted: oklch(0.78 0.02 255);
+  --color-border: oklch(1 0 0 / 0.12);
+  --color-accent: oklch(0.78 0.12 195);
+  --color-accent-foreground: oklch(0.16 0.03 255);
+}
+
+:root {
+  color-scheme: dark;
+  font-family:
+    "Avenir Next", "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+@layer base {
+  html {
+    background:
+      radial-gradient(
+        circle at top left,
+        rgb(34 211 238 / 0.16),
+        transparent 34%
+      ),
+      radial-gradient(
+        circle at top right,
+        rgb(14 165 233 / 0.1),
+        transparent 26%
+      ),
+      linear-gradient(180deg, #030712 0%, #020617 100%);
+  }
+
+  body {
+    @apply bg-bg text-foreground antialiased;
+    margin: 0;
+    min-width: 320px;
+    min-height: 100vh;
+  }
+
+  a {
+    @apply transition-colors;
+    text-decoration: none;
+  }
+}
+
+@layer components {
+  .page-shell {
+    @apply mx-auto flex min-h-screen w-full max-w-7xl flex-col;
+    @apply px-4 py-4;
+    @apply sm:px-6 sm:py-6;
+    @apply lg:px-10 lg:py-8;
+  }
+
+  .site-header {
+    @apply flex flex-col gap-3;
+    @apply border-b border-border/80 pb-4;
+    @apply sm:flex-row sm:items-center sm:justify-between sm:gap-5 sm:pb-5;
+  }
+
+  .brand {
+    @apply inline-flex items-center;
+    @apply text-foreground;
+  }
+
+  .brand-copy {
+    @apply flex flex-col;
+  }
+
+  .brand-name {
+    @apply text-lg font-semibold tracking-tight;
+  }
+
+  .brand-kicker {
+    @apply text-sm text-muted;
+  }
+
+  .site-links {
+    @apply flex flex-wrap items-center gap-4;
+    @apply text-sm text-muted;
+  }
+
+  .site-links a,
+  .footer-links a {
+    @apply hover:text-foreground;
+  }
+
+  main {
+    @apply flex flex-1 flex-col gap-14;
+    @apply py-10;
+    @apply sm:py-14;
+    @apply lg:py-20;
+  }
+
+  .hero {
+    @apply grid gap-6;
+    @apply lg:grid-cols-[minmax(0,1.2fr)_minmax(20rem,0.8fr)] lg:items-start;
+  }
+
+  .hero-copy {
+    @apply flex max-w-3xl flex-col gap-4;
+    @apply sm:gap-5;
+  }
+
+  .eyebrow {
+    @apply text-xs font-medium uppercase tracking-[0.35em];
+    @apply text-accent;
+  }
+
+  .hero h1,
+  .section-heading h2 {
+    @apply text-4xl font-semibold tracking-tight;
+    @apply sm:text-5xl;
+  }
+
+  .hero-text,
+  .section-heading p {
+    @apply text-base leading-7 text-muted;
+    @apply sm:text-lg;
+  }
+
+  .projects-section {
+    @apply flex flex-col gap-6;
+  }
+
+  .section-heading {
+    @apply max-w-3xl;
+  }
+
+  .section-heading h2 {
+    @apply mt-2;
+  }
+
+  .section-heading p {
+    @apply mt-4;
+  }
+
+  .project-grid {
+    @apply grid gap-4;
+    @apply md:grid-cols-2 xl:grid-cols-3;
+    @apply list-none p-0 m-0;
+  }
+
+  .project-card a {
+    @apply flex h-full flex-col rounded-[1.5rem] border border-border/80;
+    @apply bg-surface/70 p-5;
+    @apply transition-transform transition-colors duration-200;
+    @apply hover:-translate-y-0.5 hover:border-accent/50 hover:bg-surface-elevated/80;
+  }
+
+  .project-card-label {
+    @apply text-xs font-medium uppercase tracking-[0.32em];
+    @apply text-muted;
+  }
+
+  .project-card-title {
+    @apply mt-3 text-2xl font-semibold tracking-tight text-foreground;
+  }
+
+  .project-card-description {
+    @apply mt-3 text-sm leading-6 text-muted;
+    @apply sm:text-base;
+  }
+
+  .project-card-cta {
+    @apply mt-auto pt-8 text-sm font-medium text-accent;
+  }
+
+  .site-footer {
+    @apply flex flex-col gap-3;
+    @apply border-t border-border/80 pt-5;
+    @apply text-sm text-muted;
+    @apply sm:flex-row sm:items-center sm:justify-between sm:pt-6;
+  }
+
+  .footer-links {
+    @apply flex flex-wrap items-center gap-5;
+  }
+}
