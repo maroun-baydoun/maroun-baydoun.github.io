@@ -20,6 +20,12 @@ export const projects: Project[] = [
     href: projectUrl("tiny-flex"),
   },
   {
+    name: "inputism",
+    description: "Turn images into checkbox mosaics.",
+    href: projectUrl("inputism"),
+    kind: "Library",
+  },
+  {
     name: "reaflex",
     description: "Easy Flexbox in React.",
     href: projectUrl("reaflex"),
@@ -33,11 +39,6 @@ export const projects: Project[] = [
     name: "evented",
     description: "Fire and listen to events in JavaScript.",
     href: projectUrl("evented"),
-  },
-  {
-    name: "new-hope",
-    description: "Esperanto tokenizer.",
-    href: projectUrl("new-hope"),
   },
   {
     name: "youtube-controller-extension",
