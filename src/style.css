@@ -87,6 +87,10 @@
     @apply hover:text-foreground;
   }
 
+  .footer-author {
+    @apply text-muted hover:text-foreground;
+  }
+
   main {
     @apply flex flex-1 flex-col gap-14;
     @apply py-10;
