@@ -26,6 +26,13 @@ export const projects: Project[] = [
     kind: "Library",
   },
   {
+    name: "meter.css",
+    description:
+      "A tiny CSS-only library for styling native HTML meter elements.",
+    href: projectUrl("meter.css"),
+    kind: "Library",
+  },
+  {
     name: "reaflex",
     description: "Easy Flexbox in React.",
     href: projectUrl("reaflex"),
